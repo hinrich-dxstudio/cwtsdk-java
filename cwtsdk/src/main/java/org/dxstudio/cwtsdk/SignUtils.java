@@ -35,6 +35,7 @@ public class SignUtils {
     public static String getSign(Map<String, Object> p, String secret) {
         if (p.isEmpty()) return "";
         String originalSign = getString(p) + "&secret=" + secret;
+//        System.out.println(originalSign);
         return DigestUtils.md5DigestAsHex(originalSign.getBytes());
     }
 

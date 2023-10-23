@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
+import java.math.BigDecimal;
 
 @RestController
 public class RequestAPI {
@@ -29,7 +30,7 @@ public class RequestAPI {
 
 
     @RequestMapping("/api/create")
-    public CreateOrder Create( @RequestParam(name = "amount") double amount ) throws IOException {
+    public CreateOrder Create( @RequestParam(name = "amount") BigDecimal amount ) throws IOException {
 
         MerchantSDK sdk = new MerchantSDK(gateway, key, secret);
         CreateOrderParam param = CreateOrderParam.builder()

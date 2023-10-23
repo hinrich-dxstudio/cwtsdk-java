@@ -2,6 +2,7 @@ package org.dxstudio.cwtsdk.request;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class CreateOrderParam {
 
     private int type = 1;
 
-    private double cash = 0;
+    private BigDecimal cash = BigDecimal.ZERO;
 
     private int minRemain = 0;
 
@@ -68,7 +69,7 @@ public class CreateOrderParam {
             return this;
         }
 
-        public CreateOrderParamBuilder amount( double amount ){
+        public CreateOrderParamBuilder amount( BigDecimal amount ){
             target.cash = amount;
             return this;
         }
