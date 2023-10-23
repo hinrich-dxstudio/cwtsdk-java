@@ -1,0 +1,4 @@
+cwtSdk:
+  gateway: ${API_GATE_WAY:http://api.dianfus.dx.com}
+  key: ${API_KEY:SyHJLpvJ32VgSNFPetkmbuZNGy7kIz}
+  secret: ${API_SECRET:2FpIn952YYtWNVu3anfmJcUHx56jej}
