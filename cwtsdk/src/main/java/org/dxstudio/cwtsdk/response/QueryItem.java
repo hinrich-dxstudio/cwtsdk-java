@@ -3,6 +3,8 @@ package org.dxstudio.cwtsdk.response;
 import com.alibaba.fastjson.annotation.JSONField;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class QueryItem {
 
@@ -17,9 +19,9 @@ public class QueryItem {
     private int status;
 
     @JSONField( name = "originCash")
-    private double amount;
+    private BigDecimal amount;
 
     @JSONField( name = "cash")
-    private double amountReceived;
+    private BigDecimal amountReceived;
 
 }
