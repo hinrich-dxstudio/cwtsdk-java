@@ -11,3 +11,14 @@
 
 注意沙盒环境的账号和正式环境的账号是不一样的，因此 key和secret也不一样。。请勿要使用正式账号的 key用于沙盒环境\
 如果您需要在沙盒环境调试，请向工作人员索要沙盒环境的账号
+
+***
+在maven引入
+
+        <dependency>
+        <groupId>io.github.hinrich-dxstudio</groupId>
+        <artifactId>cwtsdk</artifactId>
+        <version>1.0</version>
+        </dependency>
+        
+直接使用sdk
